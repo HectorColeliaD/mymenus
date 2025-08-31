@@ -9,8 +9,8 @@ import { Burgers } from '../../mainburgers-menu/mburgers/mburgers';
 })
 export class Sburgers {
   specialBurgers: Burgers[] =  [
-    {id:1, burger: "Mega de Cheddar", price: 4200},
-    {id:2, burger: "Mega de Cheddar", price: 4200},
-    {id:3, burger: "Mega de Cheddar", price: 4200},
+    {id:1, burger: "Bacon doble", price: 4200},
+    {id:2, burger: "Triple", price: 4200},
+    {id:3, burger: "Lechuga y Tomate", price: 4200},
   ]
 }

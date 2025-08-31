@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Sburgers } from "./sburgers/sburgers";
 
 @Component({
   selector: 'app-specialburgers-menu',
-  imports: [],
+  imports: [Sburgers],
   templateUrl: './specialburgers-menu.html',
   styleUrl: './specialburgers-menu.scss'
 })
