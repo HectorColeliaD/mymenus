@@ -1,0 +1,10 @@
+
+    <ul class="special-list">
+        @for (special of specialBurgers; track special.id) {
+            <div class="special-item">
+                <li>{{special.burger}}</li>
+                <li>{{special.price}}</li>
+            </div>
+        }
+    </ul>
+

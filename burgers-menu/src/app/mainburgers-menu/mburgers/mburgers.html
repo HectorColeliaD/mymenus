@@ -1,0 +1,11 @@
+<div class="simplesContainer">
+    <h1>Hamburguesas simples</h1>
+    <ul>
+        @for (burger of burgers; track burger.id) {
+            <div class="burgerContainer">
+                <li>{{burger.burger}}</li>
+                <li>{{burger.price}}</li>
+            </div>
+        }
+    </ul>
+</div>
