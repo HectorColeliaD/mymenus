@@ -1,24 +1,74 @@
-:host{
+:host {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 
-
-    div:has(img) {
-        width: clamp(300px, 60%, 800px);
-        height: 60%;
+    .background {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background: url('https://www.transparenttextures.com/patterns/food.png');
+        background-color: #b35400;
+        background-repeat: repeat;
+        z-index: -1;
+        
     }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+        
+    }
+
+    ul div:nth-child(2) {
+        transform: translateY(10%);
+    }
+
+    .imgContainer {
+        display: flex;
+        width: min-content;
+        height: 40%;
+        flex:1;
+        margin-top: 100px;
+        opacity: 0;
+        animation: appear 2s ease both;
+    }
+
+
+    div:has(> img) {
+        position: relative;
+        width: clamp(650px, 50vw, 680px);
+        height: 400px;
+        
+        filter: drop-shadow(0px 25px 30px #1117);
+    }
+
+    div:has(>img):first-child, div:has(> img):last-child {
+        top: 50px;
+        left: 350px;
+    }
+
+    div:has(>img):nth-child(2)  {
+        width: 700px;
+        
+    }
+
+
+    div:has(> img):last-child {
+        left: -300px;
+        z-index: -1;
+    }
+
 
     img {
         width: 100%;
         height: 100%;
-
+        filter: brightness(0.92) contrast(0.85) saturate(1.15) sepia(0.05);
     }
-    .background {
-        position: absolute;
-        height: 100vh;
-        width: 100vw;
-        background: #aaaa;
-        z-index: -1;
-    }
+    
 }
