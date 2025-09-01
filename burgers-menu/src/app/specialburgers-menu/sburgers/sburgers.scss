@@ -4,7 +4,7 @@
     
 
     .special-list {
-        width: 60vw;
+        width: min-content;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -12,13 +12,15 @@
         padding: 0;
         margin: 0;
         align-items: flex-end;
-        gap: clamp(10px, 5vw, 40px);
+        gap: clamp(10px, 10vw, 200px);
         
     }
 
     .special-item-container {
+        position: relative;
         color: #fff;
-        flex: 0 0 120px;
+        flex: 0 0 300px;
+        
         
 
         display: flex;
@@ -41,11 +43,15 @@
         rgba(179,84,0,0.9),    
         rgba(212,120,0,0.9)   
         );
+
         box-shadow: 
         0 4px 6px rgba(139,54,0,0.4),
         0 8px 12px rgba(179,84,0,0.3);
         
+    }
 
+    .special-item-container:nth-child(2){
+        transform: translateY(-30px);
     }
 
     
