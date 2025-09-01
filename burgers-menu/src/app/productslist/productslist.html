@@ -1,0 +1,9 @@
+
+<ul class="special-list">
+        @for (product of productsList(); track $index) {
+            <li class="special-item-container">
+                <div>{{product.burger}}</div>
+                <div>{{product.price}}</div>
+            </li>
+        }
+</ul>
